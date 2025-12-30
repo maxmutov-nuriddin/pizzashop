@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Menu = ({setCartCount}) => {
-   const [totalCount, setTotalCount] = useState(0);
    const [activeFilter, setActiveFilter] = useState("Show All");
    const [cardStates, setCardStates] = useState({});
 
@@ -63,7 +62,6 @@ const Menu = ({setCartCount}) => {
 
    const handleOrder = (pizzaId) => {
       const quantity = cardStates[pizzaId]?.quantity || 1;
-      setTotalCount(prev => prev + quantity);
       setCartCount(prev => prev + quantity);
    };
 
