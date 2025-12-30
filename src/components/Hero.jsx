@@ -1,5 +1,5 @@
 const Hero = () => {
-   const videoSrc = null; // или путь к видео, если есть
+   const videoSrc = "./img/hero-img/4008533-uhd_4096_2160_25fps.mp4";
 
    return (
       <section className="hero container">
